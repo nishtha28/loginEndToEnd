@@ -2,6 +2,23 @@
 
 module.exports = {
 
+    test:{
+        client: 'mssql',
+        connection: {
+            host: 'localhost',
+            user: 'sa',
+            password: 'yourStrong(!)Password',
+            database: 'cohort_3_test'
+        },
+        pool: {
+            min: 2,
+            max: 20
+        },
+        migrations: {
+            tableName: 'knex_migrations'
+        }
+    },
+
   development: {
     client: 'mssql',
         connection: {
