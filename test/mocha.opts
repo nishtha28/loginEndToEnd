@@ -1,0 +1,2 @@
+mocha.opts -> --require test/helper
+--timeout 2500
